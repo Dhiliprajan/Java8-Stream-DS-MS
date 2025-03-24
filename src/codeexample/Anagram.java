@@ -1,6 +1,5 @@
 package codeexample;
 
-import javax.swing.*;
 import java.util.Arrays;
 
 public class Anagram {
