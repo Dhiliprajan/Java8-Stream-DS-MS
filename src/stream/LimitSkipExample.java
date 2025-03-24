@@ -10,14 +10,15 @@ public class LimitSkipExample {
 
         // Limit
         int sum = list.stream().limit(5)
-                .collect(Collectors.toList())
+                .toList()
                 .stream().reduce((a,b) -> a+b).get();
         System.out.println(sum);
 
         //Skip
         int sum1 = list.stream().skip(5)
-                .collect(Collectors.toList())
+                .toList()
                 .stream().reduce((a,b) -> a+b).get();
         System.out.println(sum1);
     }
 }
+

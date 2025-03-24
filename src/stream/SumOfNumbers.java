@@ -12,7 +12,7 @@ public class SumOfNumbers {
         System.out.println("Sum of all numbers : "+sum.get());
 
         //method 2
-        int sum1 = list.stream().mapToInt(Integer::intValue).sum();
+        int sum1 = list.stream().mapToInt(e->e).sum();
         System.out.println("Sum of all numbers : "+sum1);
 
         //method 3
